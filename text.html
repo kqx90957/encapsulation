@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+
+    }
+
+    body {
+      padding: 100px;
+    }
+
+    .box {
+      position: relative;
+      margin-top: 50px;
+      height: 100px;
+      width: 800px;
+      background-color: skyblue;
+    }
+
+    .box1 {
+      position: absolute;
+      left: 750px;
+      height: 100px;
+      width: 50px;
+      background-color: deeppink;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <button>点我开始 </button>
+  <div class="box">
+
+    <div class="box1"></div>
+  </div>
+
+
+
+</body>
+<script src="./anlimate.js"></script>
+<script src="./deepClone.js"></script>
+<script>
+
+  // var btn = document.querySelector('button');
+  // var box = document.querySelector('.box1');
+
+
+  // btn.onclick = function () {
+  //   fun()
+  //   function fun () {
+  //     animate(box, { left: 0 }, function () {
+  //       animate(box, { left: 750 }, fun)
+  //     })
+  //   }
+  // }
+  var a = {
+    name: 'xiaomi',
+    age: 12,
+    sayhi: function () {
+      console.log(2);
+    },
+    obj: {
+      friend: 'hawei'
+    },
+    arry: [1, 2, 34,]
+  }
+  var b = deepclone(a);
+  console.log(b);
+
+</script>
+
+</html>
